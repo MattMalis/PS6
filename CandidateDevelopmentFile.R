@@ -5,6 +5,9 @@ library(devtools)
 library(roxygen2)
 setwd("/Users/iramalis/Desktop/gitstuff/PS6") #This will need to be changed to match your directory
 
+rm(list=ls())
+
+
 ## This is run once when the package strcuture is first created
 
 
@@ -21,33 +24,26 @@ setwd("/Users/iramalis/Desktop/gitstuff/PS6") #This will need to be changed to m
 
 # Now the NAMESPACE
 
+rm(list=ls())
 ## This can be run many times as the code is updates
-current.code <- as.package("squaresPack")
+current.code <- as.package("candPack")
 load_all(current.code)
 document(current.code)
 
 ## Let's look at a function
-getSquares
-getMethod(getSquares, "Squares")
-getMethod(getSquares, "AllSquares")
-getMethod(allSquares)
-getMethod(multSquares)
+totalNeeded("Republican")
+totalNeeded("Democrat")
+totalNeeded("Donald Trump")
+?createCandidate
+createCandidate
+clinton<-createCandidate("Hillary Clinton", 4400, "Democrat")
+propNeeded(clinton, 3000)
+propNeeded("Bernie", 103)
 
-newTri<-Triangles(3,5,8)
+getMethod(propNeeded)
+propNeeded()
 
 
-## Let's try it out
-x<-c(1,2)
-y<-c(3,4)
-allObj <- allSquares(x, y)
-allObj
-getSquares(allObj)
-multSquares(4,2)
-?multSquares
-
-## Moving between classes
-addObj <- addSquares(x,y)
-as(object=addObj, Class="AllSquares")
 
 
 

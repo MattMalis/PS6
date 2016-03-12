@@ -22,9 +22,9 @@ setGeneric(name = "propNeeded",
   
 #'@export
 setMethod(f = "propNeeded",
-          definition = function(candidate, delegatesRemaining) {
+          definition = function(candidate = 'Candidate', delegatesRemaining = 'numeric') {
             proportion<-(candidate@delegatesNeeded - candidate@delegatesWon)/delegatesRemaining
-            ifelse(proportion<=0, print("Candidate already secured nomination"),
-                   ifelse(proportion>1, print("Candidate cannot secure nomination"),
+            ifelse(proportion<=0, "Candidate already secured nomination",
+                   ifelse(proportion>1, "Candidate cannot secure nomination",
                            return(proportion)))
           })
