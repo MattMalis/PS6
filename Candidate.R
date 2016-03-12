@@ -12,4 +12,29 @@ setwd("/Users/iramalis/Desktop/gitstuff/PS6")
 #'\item \code{delegatesNeeded} Number of delegates needed to secure party nomination
 #'}
 #'
+#'@author Matt Malis: \email{malis.matt@gmail.com}
+#'@aliases 
+#'@rdname Candidate
+#'@export
 #'
+
+setClass(Class = "Candidate", representation = representation(
+  name = "character",
+  delegatesWon = "numeric",
+  party = "character",
+  delegatesNeeded = "numeric"),
+  protoype = prototype(
+    name = c(),
+    delegatesWon = c(),
+    party = c(),
+    delegatesNeeded = c()
+  ))
+
+
+#' @export
+setMethod("initialize", "Candidate", 
+          function(.Object, ...){
+            value=callNextMethod()
+            return(value)
+          }
+) 
