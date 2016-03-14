@@ -29,8 +29,10 @@ totalNeeded("Democrat")
 totalNeeded("Donald Trump")
 ?createCandidate
 createCandidate
-clinton<-createCandidate("Hillary Clinton", 5400, "Democrat")
-propNeeded(clinton, 20)
+clinton<-createCandidate("Hillary Clinton", 4400, "Democrat")
+print(clinton)
+
+propNeeded(clinton, 500)
 propNeeded("Bernie", 103)
 
 getMethod(propNeeded)

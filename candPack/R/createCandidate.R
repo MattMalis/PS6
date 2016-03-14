@@ -28,6 +28,6 @@ setGeneric(name = "createCandidate",
 setMethod(f = "createCandidate",
           definition = function(name, delegatesWon, party){
             return(new("Candidate", name=name, delegatesWon=delegatesWon,
-                       party=party, delegatesNeeded=totalNeeded(party)))
+                       party=party))#, delegatesNeeded=totalNeeded(party)))
           })
 

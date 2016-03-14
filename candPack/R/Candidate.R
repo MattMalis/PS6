@@ -31,9 +31,12 @@ setClass(Class = "Candidate", representation = representation(
 
 #' @export
 setMethod("initialize", "Candidate", 
-          function(.Object, ...){
-            value=callNextMethod()
-            return(value)
+          function(.Object, name, delegatesWon, party){
+            .Object@name<-name
+            .Object@delegatesWon<-delegatesWon
+            .Object@party<-party
+            .Object@delegatesNeeded<-totalNeeded(party)
+            return(.Object)
           }
 ) 
 

@@ -13,7 +13,7 @@ propNeeded(candidate, delegatesRemaining)
 \item{delegatesRemaining}{A numeric object of the number of delegates remaining}
 }
 \value{
-A numeric object o the proportion of remaining delegates needed
+A numeric object of the proportion of remaining delegates needed
 }
 \description{
 Calculates proportion of remaining delegates needed to secure nomination
