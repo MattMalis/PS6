@@ -5,12 +5,12 @@
 #'@param candidate An object of class Candidate
 #'@param delegatesRemaining A numeric object of the number of delegates remaining
 #'
-#'@return A numeric object o the proportion of remaining delegates needed
+#'@return A numeric object of the proportion of remaining delegates needed
 #'@author Matt Malis \email{malis.matt@gmail.com}
-#'@note
+#'@note Don't have much else to say about this one
 #'@examples
 #'
-#'
+#'propNeeded('Hillary Clinton', 2500)
 #'@seealso \code{\link{createCandidate}}
 #'@rdname propNeeded
 #'@aliases propNeeded,ANY-method

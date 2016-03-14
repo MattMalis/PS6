@@ -18,9 +18,12 @@ A numeric object o the proportion of remaining delegates needed
 \description{
 Calculates proportion of remaining delegates needed to secure nomination
 }
+\note{
+Don't have much else to say about this one
+}
 \examples{
 
-
+propNeeded('Hillary Clinton', 2500)
 }
 \author{
 Matt Malis \email{malis.matt@gmail.com}

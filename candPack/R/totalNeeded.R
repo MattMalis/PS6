@@ -11,7 +11,7 @@
 #'
 #'totalNeeded("Democrat")
 #'@seealso \code{\link{createCandidate}}
-#'@rdname createCandidate
+#'@rdname totalNeeded
 #'@aliases totalNeeded,ANY-method
 #'@export
 setGeneric(name = "totalNeeded", 

@@ -7,10 +7,10 @@
 #'@param party A character object of the candidate's party
 #'
 #'@return an object of class Candidate containing
-#' \item {name} {The candidate's name}
-#' \item {delegatesWon} {Number of delegates the candidate has won}
-#' \item {party} {The candidate's party}
-#' \item {delegatesNeeded} {Number of delegates needed for the candidate's party nomination}
+#' \item{name}{The candidate's name}
+#' \item{delegatesWon}{Number of delegates the candidate has won}
+#' \item{party}{The candidate's party}
+#' \item{delegatesNeeded}{Number of delegates needed for the candidate's party nomination}
 #'@author Matt Malis \email{malis.matt@gmail.com}
 #'@note This function creates a Candidate!
 #'@examples 
