@@ -22,8 +22,8 @@ setGeneric(name = "totalNeeded",
 #'@export
 setMethod(f="totalNeeded",
            definition = function(party){
-             ifelse(party=="Democrat", return (4765), 
-                    ifelse(party=="Republican", return (2472), return(NA)))
+             ifelse(party %in% c("Democrat","democrat", "Dem", "dem"), return (4765), 
+                    ifelse(party %in% c("Republican", "republican", "Rep", "rep", "GOP"), return (2472), return(NA)))
            }
            )
 

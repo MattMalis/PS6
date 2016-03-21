@@ -21,15 +21,20 @@ rm(list=ls())
 current.code <- as.package("candPack")
 load_all(current.code)
 document(current.code)
-?totalNeeded
 
-## Let's look at a function
+
+## Testing out the functions and help files
+?totalNeeded
 totalNeeded("Republican")
 totalNeeded("Democrat")
+totalNeeded("dem")
+totalNeeded("GOP")
 totalNeeded("Donald Trump")
+
 ?createCandidate
 createCandidate
 clinton<-createCandidate("Hillary Clinton", 4400, "Democrat")
+clinton
 print(clinton)
 
 propNeeded(clinton, 500)

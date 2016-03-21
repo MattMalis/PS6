@@ -1,10 +1,13 @@
 Package: candPack
-Title: What the Package Does (one line, title case)
+Title: Calculating a Candidate's Delegates
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors: Matt Malis
+Maintainer: Matt Malis <malis.matt@gmail.com>
+Description: This package creates an S4 object of a candidate, which includes the candidate's 
+    name, party, delegates won, and delegates needed. It allows the user to calculate portion of
+    remaining delegates needed to secure the nomination.
 Depends:
     R (>= 3.2.2)
-License: What license is it under?
+License: WUSTL
 LazyData: true
 RoxygenNote: 5.0.1
